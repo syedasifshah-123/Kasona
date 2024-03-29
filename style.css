@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(237, 237, 229);
+    font-family: 'Aldercy', sans-serif;
+}
+
+::selection {
+    background-color: black;
+    color: rgb(237, 237, 229);
+}
+
+.main {
+    width: 100%;
+}
+
+.cursor {
+    height: 15px;
+    /* position: absolute; */
+    width: 15px;
+    background-color: black;
+    border-radius: 50%;
+    transition: .5s;
+    /* mix-blend-mode: color-burn; */
+}
+
+.home {
+    padding: 20px 30px;
+}
+
+.nav {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    padding-bottom: 25px;
+}
+
+.nav-end i {
+    display: none;
+    right: 0;
+    top: 47px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav h2 {
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    line-height: 30px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav-medium {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-medium ul li {
+    display: inline-flex;
+    list-style: none;
+}
+
+.nav-medium a {
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: -.5px;
+    text-transform: uppercase;
+}
+
+.nav-end h4 {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.nav-end h4::before {
+    content: "";
+    background-color: #000;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: -2px;
+}
+
+/* hero */
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+
+.hero-left {
+    width: 75%;
+    padding-top: 50px;
+    padding-left: 50px;
+    height: 100%;
+}
+
+
+.hero-left h1 {
+    font-size: 6vw;
+    line-height: 6vw;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.hero-left h1:nth-child(2) {
+    padding-left: 200px;
+}
+
+.hero-left h1:nth-child(4) {
+    padding-left: 200px;
+}
+
+.hero-left .hero-text {
+    text-align: right;
+    padding-right: 80px;
+    padding-top: 20px;
+}
+
+.hero-text p {
+    letter-spacing: .5px;
+}
+
+.hero-left .last-image {
+    width: 15vw;
+    position: absolute;
+    height: 30vh;
+    bottom: 0;
+    left: 0;
+}
+
+.last-image img {
+    object-fit: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+   
+.hero-left a {
+    color: #fff;
+    display: flex;
+    text-decoration: none;
+    width: 8vw;
+    height: 8vw;
+    background-color: #80121d;
+    margin-left: 700px;
+    margin-top: 60px;
+    border-radius: 50%;
+    padding: 30px 10px;
+    font-size: 15px;
+    padding-top: 40px;
+    text-align: center;
+    transform: rotate(-15deg);
+}
+
+.hero-right {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    right: 0;
+}
+
+.hero-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+
+.about {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    border-bottom: 2px solid black;
+}
+
+.about-left {
+    width: 45%;
+    height: 100%;
+    border-right: 2px solid black;
+}
+
+.about-left h6 {
+    font-size: 6vw;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding-top: 60px;
+}
+
+.about-left img {
+    height: 70vh;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.about-right {
+    width: 55%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    height: 100%;
+}
+
+.about-right h6 {
+    color: #80121d;
+    font-size: 13px;
+    padding-top: 210px;
+    padding-left: 50px;
+}
+
+.about-right .left-text {
+    max-width: 450px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.about-right .right-text {
+    margin-top: 50px;
+    margin-left: 250px;
+    max-width: 450px;
+}
+
+.group {
+    width: 100%;
+    height: 60vh;
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.first {
+    border-right: 2px solid black;
+    width: 33.3%;
+    height: 60vh;
+}
+
+.first h6 {
+    padding-top: 70px;
+    padding-left: 20px;
+    color: #80121d;
+}
+
+.first p {
+    padding-top: 40px;
+    padding-left: 20px;
+}
+
+.second {
+    border-right: 2px solid black;
+    width: 33.3%;
+    height: 60vh;
+}
+
+.second h6 {
+    padding-top: 70px;
+    color: #80121d;
+    padding-left: 20px;
+}
+
+.second p {
+    padding-top: 40px;
+    padding-left: 20px;
+}
+
+.third {
+    width: 33.3%;
+    height: 60vh;
+}
+
+.third img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+}
